@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.attribution {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.card {
+    margin: auto;
+    margin-top: 12%;
+    max-width: 580px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+}
+
+.card-inside-left {
+    margin-bottom: -4px;
+    flex: 1 50%;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.card-inside-right {
+    flex: 1 50%;    
+}
+
+.card-info-wrap {
+    margin: 30px;
+}
+
+.card-info-above-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: rgba(0, 0, 0, 0.39);
+}
+
+.card-info-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 29px;
+    line-height: 30px;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-info-description {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.39);
+
+}
+
+.wrap-card-info-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-info-price {
+    margin-top: 15px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+}
+
+.card-info-old-price {
+    margin-top: 26px;
+    margin-left: 23px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.39);
+}
+
+.card-info-button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.card-info-button:hover {
+    background-color: hsl(156, 35%, 18%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.fa-cart-shopping {
+    margin-right: 20px;
+    width: 5px;
+}
+
+@media (max-width: 375px) {
+    .card {
+        margin-top: 30px;
+        max-width: 325px;
+    }
+
+    .img-card {
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    .card-info-price {
+        margin-bottom: 13px;
+    }
+}
+
+@media (max-width: 580px) and (min-width: 376px) {
+    .card {
+        margin-top: 30px;
+        max-width: 80%;
+    }
+
+    .img-card {
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    .card-info-price {
+        margin-bottom: 13px;
+    }
+}
