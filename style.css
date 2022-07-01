@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
+:root {
+    --font-main: 'Montserrat', sans-serif;
+
+    --color-main-bg: hsl(30, 38%, 92%);
+    --color-card-bg: hsl(0, 0%, 100%);
+    --color-text: rgba(0, 0, 0, 0.39);
+    --color-title: hsl(212, 21%, 14%);
+    --color-button: hsl(158, 36%, 37%);
+    --color-button-hover: hsl(156, 35%, 18%);
+}
+
 html, body{
     margin: 0;
     padding: 0;
  }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: hsl(30, 38%, 92%);
+    font-family: var(--font-main);
+    background-color: var(--color-main-bg);
 }
 
 .attribution {
@@ -22,7 +33,7 @@ body {
     max-width: 580px;
     display: flex;
     flex-flow: row wrap;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--color-card-bg);
     border-radius: 12px;
 }
 
@@ -48,7 +59,7 @@ body {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 5px;
-    color: rgba(0, 0, 0, 0.39);
+    color: var(--color-text);
 }
 
 .card-info-title {
@@ -57,14 +68,14 @@ body {
     font-family: 'Fraunces', serif;
     font-size: 29px;
     line-height: 30px;
-    color: hsl(212, 21%, 14%);
+    color: var(--color-title);
 }
 
 .card-info-description {
     font-size: 13px;
     font-weight: bold;
     line-height: 22px;
-    color: rgba(0, 0, 0, 0.39);
+    color: var(--color-text);
 
 }
 
@@ -79,7 +90,7 @@ body {
     grid-column-end: 2;
     font-family: 'Fraunces', serif;
     font-size: 30px;
-    color: hsl(158, 36%, 37%);
+    color: var(--color-button);
 }
 
 .card-info-old-price {
@@ -90,7 +101,7 @@ body {
     font-size: 13px;
     font-weight: bold;
     text-decoration: line-through;
-    color: rgba(0, 0, 0, 0.39);
+    color: var(--color-title);
 }
 
 .card-info-button{
@@ -99,7 +110,7 @@ body {
     height: 45px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-color: hsl(158, 36%, 37%);;
+    background-color: var(--color-button);
     color: white;
     border: none;
     border-radius: 8px;
@@ -107,7 +118,7 @@ body {
 }
 
 .card-info-button:hover {
-    background-color: hsl(156, 35%, 18%);
+    background-color: var(--color-button-hover);
     transition: 0.3s;
     cursor: pointer;
 }
